@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cerebralpalsydetection">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CerebralPalsyDetection">
+        <activity
+            android:name=".quizresults4"
+            android:exported="false"
+            android:parentActivityName=".quizsection" />
+        <activity
+            android:name=".quizresults3"
+            android:exported="false"
+            android:parentActivityName=".quizsection" />
+        <activity
+            android:name=".quizresults2"
+            android:exported="false"
+            android:parentActivityName=".quizsection" />
+        <activity
+            android:name=".quizresults"
+            android:exported="false"
+            android:parentActivityName=".quizsection" />
+        <activity
+            android:name=".precaution5"
+            android:exported="false"
+            android:parentActivityName=".precautions" />
+        <activity
+            android:name=".precaution4"
+            android:exported="false"
+            android:parentActivityName=".precautions" />
+        <activity
+            android:name=".precaution3"
+            android:exported="false"
+            android:parentActivityName=".precautions" />
+        <activity
+            android:name=".precaution2"
+            android:exported="false"
+            android:parentActivityName=".precautions" />
+        <activity
+            android:name=".userpofile"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".forgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".precaution1"
+            android:exported="false"
+            android:parentActivityName=".precautions" />
+        <activity
+            android:name=".quizsection"
+            android:exported="false"
+            android:parentActivityName=".diseasedetection" />
+        <activity
+            android:name=".treatment"
+            android:exported="false"
+            android:parentActivityName=".LearningSystems" />
+        <activity
+            android:name=".LearningSystems"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".learningvideos4"
+            android:exported="false"
+            android:parentActivityName=".learningsystem" />
+        <activity
+            android:name=".learningvideos3"
+            android:exported="false"
+            android:parentActivityName=".learningsystem" />
+        <activity
+            android:name=".learningvideos2"
+            android:exported="false"
+            android:parentActivityName=".learningsystem" />
+        <activity
+            android:name=".learningvideos"
+            android:exported="false"
+            android:parentActivityName=".learningsystem" />
+        <activity
+            android:name=".precautions"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".learningsystem"
+            android:exported="false"
+            android:parentActivityName=".LearningSystems" />
+        <activity
+            android:name=".setprofile"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".updateprofile"
+            android:exported="false"
+            android:parentActivityName=".userpofile" />
+        <activity
+            android:name=".viewdoctors"
+            android:exported="false"
+            android:parentActivityName=".suggest" />
+        <activity
+            android:name=".viewhospitals"
+            android:exported="false"
+            android:parentActivityName=".suggest" />
+        <activity
+            android:name=".diseasedetection"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".aboutus"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".suggest"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".uploadimage"
+            android:exported="false"
+            android:parentActivityName=".diseasedetection" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

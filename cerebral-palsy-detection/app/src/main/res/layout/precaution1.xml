@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".precaution1"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/p1toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/app"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:titleMarginStart="10dp"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Making sure your child is vaccinated for all common infant infections"
+            android:textColor="@color/app"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Vaccines can protect your child from disease. Different types of vaccines work in different ways to offer protection. With all types of vaccines your child's body will remember how to fight that virus or disease\nStrengthen your baby’s immune system because immunity is the body’s way of preventing disease. Your baby’s immune system is not fully developed at birth which can put your baby at a greater risk of infection. \nVaccines reduce your child’s risk of infection by working with the body’s natural defenses to help safely develop protection against disease. Vaccines can prevent serious diseases that once killed or harmed many infants, children and adults. Without vaccines your child is at risk for serious illness or even death from diseases."
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

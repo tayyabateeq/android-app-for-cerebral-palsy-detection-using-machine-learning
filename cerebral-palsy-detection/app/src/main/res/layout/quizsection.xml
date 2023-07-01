@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quizsection"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/qstoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/app"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:titleMarginStart="20dp"
+            app:titleTextColor="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Patient Name"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Patient Age"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="1: Does patient face difficulty in rolling over, sitting up alone, crawling and walking?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q1">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r1"
+                    android:layout_below="@+id/q1">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q1y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q1n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r1"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="2: Does patient have excessive drolling and face problem with swallowing and make it difficult to eat and drink?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r2"
+                    android:layout_below="@+id/q2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q2y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q2n">
+                    </RadioButton>
+
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="3: Does patient delays in speech development and also face difficulty in speaking?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q3"
+                    android:layout_below="@+id/r2">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r3"
+                    android:layout_below="@+id/q3">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q3y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q3n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="4: Does patient have awkward posture and coordination?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q4"
+                    android:layout_below="@+id/r3">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r4"
+                    android:layout_below="@+id/q4">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q4y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q4n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="5: Does patient movement range from slow to rapid and can be accompanied by pain?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q5"
+                    android:layout_below="@+id/r4">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r5"
+                    android:layout_below="@+id/q5">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q5y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q5n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="6: Does patient have slow eye movements and inability to target an object correctly?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q6"
+                    android:layout_below="@+id/r5">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r6"
+                    android:layout_below="@+id/q6">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q6y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q6n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="7: Does patient use one side of body more than the other one?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q7"
+                    android:layout_below="@+id/r6">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r7"
+                    android:layout_below="@+id/q7">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q7y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q7n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="8: Does patient have variation in muscles tone such as being too floppy or too stiff?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q8"
+                    android:layout_below="@+id/r7">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r8"
+                    android:layout_below="@+id/q8">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q8y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q8n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="9: Does patient face difficulty in grasping small objects?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q9"
+                    android:layout_below="@+id/r8">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r9"
+                    android:layout_below="@+id/q9">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q9y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q9n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="10: Does patient have shaky movement?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/q10"
+                    android:layout_below="@+id/r9">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/r10"
+                    android:layout_below="@+id/q10">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q10y">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/q10n">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/quizfinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/app"
+                    android:text="Finish"
+                    android:textColor="#ffffff"
+                    android:layout_below="@+id/r10"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

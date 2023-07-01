@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".learningvideos4">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/lv4toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:titleMarginStart="20dp"
+        android:layout_marginBottom="5dp"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoview"
+        android:layout_below="@+id/lv4toolbar">
+    </VideoView>
+
+</RelativeLayout>

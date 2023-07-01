@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".viewdoctors">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/vttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:titleMarginStart="20dp"
+        android:layout_marginBottom="5dp"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Sajjad Ali"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Commissioner Road, Muhammad Pura, Sialkot"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee: 1000RS"
+                        android:layout_margin="10dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="Call now"
+                        android:id="@+id/callbtn1"
+                        android:background="@color/app"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Umer Shahbaz"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: Munir Chowk, Kutchery Road, Near UBL Bank, Gujranwala"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee: 1500RS"
+                        android:layout_margin="10dp"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="Call now"
+                        android:id="@+id/callbtn2"
+                        android:background="@color/app"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Kashmala Khan"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: Shahrah-e-Quaid-e-Azam,Allama Iqbal Town, Street No. 8 Rahwali Contonment, Gujranwala"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee: 1500RS"
+                        android:layout_margin="10dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="Call now"
+                        android:id="@+id/callbtn3"
+                        android:background="@color/app"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Qasim Hussain"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: Opposite DCO Office, Sialkot Road, Block-A, Satellite Town, Gujranwala"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee: 1000RS"
+                        android:layout_margin="10dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="Call now"
+                        android:id="@+id/callbtn4"
+                        android:background="@color/app"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Abubakar Siddique"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: 262-263 West Road Colony, Main Canal Road,Opp. Metro Cash and Delivery, Lahore"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee: 2500RS"
+                        android:layout_margin="10dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="Call now"
+                        android:id="@+id/callbtn5"
+                        android:background="@color/app"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:src="@drawable/doctor"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Asst. Prof. Dr. Shaila Ali"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/app" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address: 14 New Abubakar Block, New Garden Town, Lahore"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fee: 2500RS"
+                    android:layout_margin="10dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Call now"
+                    android:id="@+id/callbtn6"
+                    android:background="@color/app"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:src="@drawable/doctor"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Gauhar Mahmood Azeem"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/app" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address: Plaza 36, Commercial Broadway, Barki Road, Lahore"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fee: 2500RS"
+                    android:layout_margin="10dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:text="Call now"
+                    android:id="@+id/callbtn7"
+                    android:background="@color/app"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+</ScrollView>

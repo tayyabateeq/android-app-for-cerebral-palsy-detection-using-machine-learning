@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".treatment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ttoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:titleMarginStart="20dp"
+            android:layout_marginBottom="5dp"
+            app:titleTextColor="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+            android:onClick="expand1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Physical Therapy"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Strengthening muscles to prevent weakening or deterioration. \nLoosening muscles to prevent joint contracture."
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#A9A9A9"
+                        android:visibility="gone"
+                        android:id="@+id/details1"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/physicaltherapy"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:onClick="expand2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout2"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Occupational Therapy"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Improving fine motor function. \nEnhancing functional abilities."
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#A9A9A9"
+                        android:visibility="gone"
+                        android:id="@+id/details2"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/occupationaltherapy"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:onClick="expand3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout3"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speech and Language Therapy"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Improving oral muscle function. \nTeaching alternate communicate methods, like sign language."
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#A9A9A9"
+                        android:visibility="gone"
+                        android:id="@+id/details3"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/speechtherapy"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:onClick="expand4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout4"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Assistive Technologies"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Walkers. \nCrutches. \nWheelchairs. \nOrthotics - improve muscle growth, 'train' muscles to grow properly."
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#A9A9A9"
+                        android:visibility="gone"
+                        android:id="@+id/details4"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/assistivetechnologies"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:onClick="expand5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout5"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medications"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Baclofen - loosens spastic muscles throughout the body. \nOnabotulinumtoxinA - induces muscle paralysis in isolated muscle groups."
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#A9A9A9"
+                        android:visibility="gone"
+                        android:id="@+id/details5"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/medication"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:onClick="expand6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout6"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Surgery"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/app" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Relaxing taut muscles. \nLengthening tendons. \nReplacing tight tendons with looser ones. \nServing nerves that control taut muscles."
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#A9A9A9"
+                        android:visibility="gone"
+                        android:id="@+id/details6"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/surgery"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
